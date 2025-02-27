@@ -12440,48 +12440,10 @@
     background-repeat: no-repeat;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  @media screen and (max-width: 767px) {
+    .menu-area .mobile-nav-toggler { 
+      display: block;
+
+    }
+  }

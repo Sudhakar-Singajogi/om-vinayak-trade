@@ -2,9 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Preloader from "./Preloader";
 import Menu from "./Menu";
+import './Header.css';
 
 const Header = () => {
-  const logoUrl = process.env.PUBLIC_URL + "/assets/images/icons/icon-1.png";
+  const toggleMenu = () => {
+    if (document.body.className === '') {
+      document.body.classList.add("mobile-menu-visible");
+    } else {
+      document.body.classList.remove("mobile-menu-visible");
+    }
+  };
 
   return (
     <>
@@ -16,14 +23,15 @@ const Header = () => {
           <div className="outer-container">
             <div className="outer-box">
               <div className="menu-area">
-                <div className="logo-box">
+                
+                <div className="logo-box d-none d-md-block">
                   <div className="logo-title">
                     <span>OM</span>
                     <figure className="logo">
                       <a href="index-2.html">
                         <img
                           className="logo-img"
-                          src={`/assets/images/om-vinayak.gif`}
+                          src={`assets/images/om-vinayak.gif`}
                           alt="OMVINAYAK-LOGO"
                         />
                       </a>
@@ -32,7 +40,23 @@ const Header = () => {
                   </div>
                 </div>
 
-                <div className="mobile-nav-toggler">
+                <div className="logo-box d-block d-md-none">
+                  <div className="logo-title">
+                    {/* <span>OM</span> */}
+                    <figure className="logo">
+                      <a href="index-2.html">
+                        <img
+                          className="logo-img"
+                          src={`assets/images/om-vinayak.gif`}
+                          alt="OMVINAYAK-LOGO"
+                        />
+                      </a>
+                    </figure>
+                    {/* <span>Vinayak</span> */}
+                  </div>
+                </div>
+
+                <div className="mobile-nav-toggler" onClick={() => toggleMenu()}>
                   <i className="icon-bar"></i>
                   <i className="icon-bar"></i>
                   <i className="icon-bar"></i>
@@ -75,7 +99,7 @@ const Header = () => {
                       <a href="index-2.html">
                         <img
                           className="logo-img"
-                          src={`/assets/images/om-vinayak.gif`}
+                          src={`assets/images/om-vinayak.gif`}
                           alt="OMVINAYAK-LOGO"
                         />
                       </a>
@@ -112,7 +136,7 @@ const Header = () => {
       </header>
       <div className="mobile-menu">
         <div className="menu-backdrop"></div>
-        <div className="close-btn">
+        <div className="close-btn" onClick={() => toggleMenu()}>
           <i className="fas fa-times"></i>
         </div>
 
@@ -122,48 +146,8 @@ const Header = () => {
               <img src="assets/images/logo-2.png" alt="" title="" />
             </a>
           </div>
-          <div className="menu-outer"></div>
-          <div className="contact-info">
-            <h4>Contact Info</h4>
-            <ul>
-              <li>Chicago 12, Melborne City, USA</li>
-              <li>
-                <a href="tel:+8801682648101">+88 01682648101</a>
-              </li>
-              <li>
-                <a href="mailto:info@example.com">info@example.com</a>
-              </li>
-            </ul>
-          </div>
-          <div className="social-links">
-            <ul className="clearfix">
-              <li>
-                <a href="index-2.html">
-                  <span className="fab fa-twitter"></span>
-                </a>
-              </li>
-              <li>
-                <a href="index-2.html">
-                  <span className="fab fa-facebook-square"></span>
-                </a>
-              </li>
-              <li>
-                <a href="index-2.html">
-                  <span className="fab fa-pinterest-p"></span>
-                </a>
-              </li>
-              <li>
-                <a href="index-2.html">
-                  <span className="fab fa-instagram"></span>
-                </a>
-              </li>
-              <li>
-                <a href="index-2.html">
-                  <span className="fab fa-youtube"></span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div className="menu-outer"><Menu /></div>
+          
         </nav>
       </div>
     </>

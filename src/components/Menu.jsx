@@ -1,7 +1,7 @@
 import React from "react";
 import "./Menu.css";
 function Menu() {
-  return (
+return (
     <>
       <div
         className="collapse navbar-collapse show clearfix"
