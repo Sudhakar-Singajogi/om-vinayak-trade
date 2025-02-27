@@ -1,6 +1,39 @@
 @media screen and (max-width: 767px) {
-.mobile-menu .nav-logo {
-padding-bottom: 0px;
-}
+  .mobile-menu .nav-logo {
+    padding-bottom: 0px;
+  }
 
+  .outer-container {
+    .outer-box {
+      padding: 10px 20px;
+    }
+  }
+
+  .main-header {
+    height: 5.6rem !important;
+  }
+  .menu-area .mobile-nav-toggler {
+    padding-left: 60px;
+    padding-top:0px;
+  }
+
+  .main-header .logo-box {
+    & figure {
+      .logo-img {
+        width: 75% !important;
+      }
+    }
+  }
+
+  .logo-box {
+    .logo-title span{
+        /* margin-left:2.8rem; */
+        font-size: 12px;
+    }
+  }
+  .menu-area .mobile-nav-toggler .icon-bar  {
+    height:5px;
+    margin-bottom: 6px;
+    width:40px
+  }
 }

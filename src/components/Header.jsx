@@ -6,6 +6,7 @@ import './Header.css';
 
 const Header = () => {
   const toggleMenu = () => {
+    console.log('className is:', document.body.className)
     if (document.body.className === '') {
       document.body.classList.add("mobile-menu-visible");
     } else {
@@ -39,10 +40,9 @@ const Header = () => {
                     <span>Vinayak</span>
                   </div>
                 </div>
-
-                <div className="logo-box d-block d-md-none">
-                  <div className="logo-title">
-                    {/* <span>OM</span> */}
+                <div className="logo-box">
+                  <div className="logo-title d-block d-md-none">
+                    <span>OM</span>
                     <figure className="logo">
                       <a href="index-2.html">
                         <img
@@ -52,9 +52,11 @@ const Header = () => {
                         />
                       </a>
                     </figure>
-                    {/* <span>Vinayak</span> */}
+                    <span>Vinayak</span>
                   </div>
+
                 </div>
+                  
 
                 <div className="mobile-nav-toggler" onClick={() => toggleMenu()}>
                   <i className="icon-bar"></i>
@@ -65,24 +67,7 @@ const Header = () => {
                   <Menu />
                 </nav>
               </div>
-              <div className="menu-right-content">
-                <div className="search-box-outer search-toggler">
-                  <i className="flaticon-search"></i>
-                </div>
-                <div className="clients-box">
-                  <div className="icon-box">
-                    <img src="assets/images/icons/icon-6.png" alt="" />
-                  </div>
-                  <a href="index-2.html">
-                    Client Portal<i className="flaticon-right-down"></i>
-                  </a>
-                </div>
-                <div className="btn-box">
-                  <a href="index-2.html" className="theme-btn btn-one">
-                    <span>Open an A/c</span>
-                  </a>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -112,24 +97,8 @@ const Header = () => {
                   <Menu />
                 </nav>
               </div>
-              <div className="menu-right-content">
-                <div className="search-box-outer search-toggler">
-                  <i className="flaticon-search"></i>
-                </div>
-                <div className="clients-box">
-                  <div className="icon-box">
-                    <img src="assets/images/icons/icon-6.png" alt="" />
-                  </div>
-                  <a href="index-2.html">
-                    Client Portal<i className="flaticon-right-down"></i>
-                  </a>
-                </div>
-                <div className="btn-box">
-                  <a href="index-2.html" className="theme-btn btn-one">
-                    <span>Open an A/c</span>
-                  </a>
-                </div>
-              </div>
+              
+              
             </div>
           </div>
         </div>
@@ -137,15 +106,13 @@ const Header = () => {
       <div className="mobile-menu">
         <div className="menu-backdrop"></div>
         <div className="close-btn" onClick={() => toggleMenu()}>
+          
           <i className="fas fa-times"></i>
         </div>
 
         <nav className="menu-box">
-          <div className="nav-logo">
-            <a href="index-2.html">
-              <img src="assets/images/logo-2.png" alt="" title="" />
-            </a>
-          </div>
+        <div class="nav-logo"></div>
+          
           <div className="menu-outer"><Menu /></div>
           
         </nav>
