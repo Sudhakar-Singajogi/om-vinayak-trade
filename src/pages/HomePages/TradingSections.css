@@ -1,0 +1,60 @@
+.pattern1 {
+    background-image: url("../../assets/images/shape/shape-1.png");
+}
+
+.patter2 {
+    background-image: url("../../assets/images/shape/shape-2.png");
+}
+
+.trading-section {
+    background:#303449
+    
+}
+
+.trading-block-one .inner-box {
+    background: #024f7d;
+    .icon-box {
+        left:20px;
+    }
+}
+
+
+.trading-block-one .inner-box .overlay-icon
+{
+    left: 20px;
+}
+.trading-block-one .inner-box .link-box {
+    left: 20px;
+    z-index: 9;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+.trading-block-one .inner-box .link-box:before {
+    position: absolute;
+        content: '';
+        background: #35394f;
+        width: 1px;
+        height: calc(100% - 80px);
+        top: 40px;
+        right: 70px;
+        z-index: 9
+
+}
+.trading-block-one .inner-box .text:before {
+    position: relative;
+}
+
+
+.trading-block-one .inner-box .text {
+padding: 40px 60px 33px 102px;
+}
+
+.trading-block-one .inner-box .text:after {
+    position: absolute;
+    content: '';
+    background: #35394f;
+    width: 1px;
+    height: calc(100% - 80px);
+    top: 40px;
+    left: 70px;
+}

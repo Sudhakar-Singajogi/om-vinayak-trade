@@ -1,0 +1,12 @@
+.sec-pad {
+    padding: 5px 0px 120px 0px !important;
+}
+.pricing-section {
+    .pattern-layer {
+        background-image: url('../../assets/images/shape/shape-3.png');
+    }
+}
+
+.sec-title {
+    margin-top: 1rem;;
+}

@@ -1,0 +1,21 @@
+.working-block-one {
+.inner-box {
+    position: relative;
+    .static-content {
+        position: absolute;
+        left:10%;
+    }
+}
+}
+
+.working-block-one .inner-box:hover .count-text{
+    color: #fff;
+    /* background: #303449; */
+    background: #024f7d;
+  }
+
+  .working-block-one .inner-box:hover {
+    color: #fff;
+    /* background: #303449; */
+    background: #024f7d !important;
+  }

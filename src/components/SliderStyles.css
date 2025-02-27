@@ -1,0 +1,193 @@
+.banner-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-item {
+  height: 100vh; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-overlay {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.slide-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-box .theme-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-box .theme-btn:hover {
+  background: #0056b3;
+}
+
+.home-slider-img1 {
+  background-image: url("../assets/images/banner/banner-4.jpg");
+}
+
+.home-slider-img2 {
+  background-image: url("../assets/images/banner/banner-2.jpg");
+}
+
+.home-slider-img3 {
+  background-image: url("../assets/images/banner/banner-3.jpg");
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white; /* Change color if dots are not visible */
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffcc00; /* Active dot color */
+}
+
+.banner-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-item {
+  height: 65vh; /* Adjust as needed */
+  display: flex !important;
+  align-items: center;
+}
+
+.slide-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide-number-section {
+    position: absolute;
+    padding: 1.5rem;
+    width: 33%;
+    right: 33px;
+    border-radius: 9px;
+    bottom: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/* Left side text container takes 35% of the width */
+.slide-text {
+  width: 35%;
+  background:#eb6f45;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  .text {
+      margin-top: -20px;
+      color: #000;
+  }
+}
+
+.single-item-left {
+    width:45% !important
+}
+
+.single-item-right{ 
+    width: 55%;
+}
+
+/* Slide Title */
+.slide-title {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    color: #fff;
+  }
+
+/* Right side image container takes 65% of the width */
+.slide-image {
+  width: 65%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Slide Number */
+.slide-number {
+    font-size: 2rem;
+    color: #ff6600; /* A bright color for the number */
+    margin: 0 0 10px 0;
+  }
+
+.text-container {
+  max-width: 100%;
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color:#fff;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color:#fff;
+}
+
+.btn-box .theme-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-box .theme-btn:hover {
+  background: #0056b3;
+}
+
+/* Slick dots adjustments (optional) */
+.slick-dots {
+  bottom: 20px;
+}

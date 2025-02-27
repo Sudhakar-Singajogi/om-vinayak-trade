@@ -1,0 +1,21 @@
+.chooseus-section {
+    .bg-layer {
+        background-image: url('../../assets/images/background/chooseus-bg.jpg');   
+    }
+}
+.chooseus-block-one {
+    .inner-box {
+        .shape-1 {
+            background-image: url('../../assets/images/shape/shape-4.png');
+        }
+        .shape-2 {
+            background-image: url('../../assets/images/shape/shape-5.png');
+        }
+        .shape-3 {
+            background-image: url('../../assets/images/shape/shape-6.png');
+        }
+    }
+    .inner-box:hover .shape .shape-1{
+        /* background-color: #000; */
+    }
+}

@@ -1,0 +1,10 @@
+.main-menu .navigation > li.no-sublinks > a:before {
+    position: absolute;
+    content: "";
+    font-family: 'flaticon';
+    font-size: 18px;
+    top: 31px;
+    right: 0px;
+    color: #a8a9b3;
+    transition: all 500ms ease;
+}

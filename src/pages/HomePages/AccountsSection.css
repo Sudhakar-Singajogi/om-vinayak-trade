@@ -1,0 +1,101 @@
+.account-section{
+    position: relative;
+    padding: 0px;
+  }
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    min-height: 580px;
+    max-height: 600px;
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    width: 100%;
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+    min-height: 450px;
+    max-height: 500px;
+    img {
+        height:330px !important;
+        cursor: pointer;
+        border-radius: 8px;
+  transition: transform 0.3s ease-in-out;   
+    }
+    img:hover {
+        transform: scale(1.019976);
+
+    }
+  }
+  
+  .card {
+    flex: 0 0 32%;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card .open-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    /* bottom: 0%; */
+    transform: translateY(-50%);
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  
+  .carousel-button.left {
+    left: 0px;
+    z-index: 10
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+    z-index: 10;
+  }
+  
+
+  .carousel-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
