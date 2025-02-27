@@ -11,7 +11,7 @@ const HomeSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
   };
 
@@ -81,7 +81,7 @@ const HomeSlider = () => {
             <div className="slide-inner">
               {/* Left side image */}
               <div
-                className="slide-image"
+                className="slide-image d-none d-md-block"
                 style={{ backgroundImage: `url(${slide.backgroundImage})` }}
               ></div>
 
@@ -99,7 +99,8 @@ const HomeSlider = () => {
                           <span class="count-text">{slide.slideNumber}</span>
                           <h3> {slide.title}</h3>
                         </div>
-                        <div className="single-item-right text"> {slide.slideNumberDesc}</div>
+                        <div></div>
+                        <div className="single-item-right text"><p>{slide.slideNumberDesc}</p> </div>
                       </div>
                     </div>
                   </div>

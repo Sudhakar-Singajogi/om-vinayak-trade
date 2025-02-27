@@ -2,6 +2,9 @@
   .mobile-menu .nav-logo {
     padding-bottom: 0px;
   }
+  .menu-area {
+    width: 100% !important;
+  }
 
   .outer-container {
     .outer-box {

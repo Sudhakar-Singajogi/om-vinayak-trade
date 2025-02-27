@@ -919,6 +919,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   
   .main-header .logo-box{
@@ -2052,14 +2053,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 126px 20px 50px;
+    padding: 32px 126px 15px 50px;
   }
   
   .banner-section .highlights-box .single-item .count-text{
     position: absolute;
     left: 1rem;
     top: 1.2rem;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 40px;
     font-family: var(--title-font);
     font-weight: 600;
@@ -2069,11 +2070,11 @@
   .banner-section .highlights-box .single-item h3{
     position: relative;
     display: ruby-text;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     font-weight: 600;
     padding-right: 80px;
-    margin-left:1.5rem;
+    margin-left:1rem;
   }
   
   .banner-section .highlights-box .single-item h3:before{

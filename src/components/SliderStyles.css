@@ -107,42 +107,42 @@
 }
 
 .slide-number-section {
-    position: absolute;
-    padding: 1.5rem;
-    width: 33%;
-    right: 33px;
-    border-radius: 9px;
-    bottom: 0px;
-    border-bottom-left-radius: 0px;
+  position: absolute;
+  padding: 1.5rem;
+  width: 33%;
+  right: 33px;
+  border-radius: 9px;
+  bottom: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 /* Left side text container takes 35% of the width */
 .slide-text {
   width: 35%;
-  background:#eb6f45;
+  background: #eb6f45;
   display: flex;
   align-items: center;
   padding: 40px;
   .text {
-      margin-top: -20px;
-      color: #000;
+    margin-top: -20px;
+    color: #000;
   }
 }
 
 .single-item-left {
-    width:45% !important
+  width: 35%;
 }
 
-.single-item-right{ 
-    width: 55%;
+.single-item-right {
+  width: 65%;
 }
 
 /* Slide Title */
 .slide-title {
-    font-size: 1.8rem;
-    margin: 0 0 10px 0;
-    color: #fff;
-  }
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
 
 /* Right side image container takes 65% of the width */
 .slide-image {
@@ -153,10 +153,10 @@
 
 /* Slide Number */
 .slide-number {
-    font-size: 2rem;
-    color: #ff6600; /* A bright color for the number */
-    margin: 0 0 10px 0;
-  }
+  font-size: 2rem;
+  color: #ff6600; /* A bright color for the number */
+  margin: 0 0 10px 0;
+}
 
 .text-container {
   max-width: 100%;
@@ -165,13 +165,13 @@
 .text-container h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color:#fff;
+  color: #fff;
 }
 
 .text-container p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color:#fff;
+  color: #fff;
 }
 
 .btn-box .theme-btn {
@@ -190,4 +190,79 @@
 /* Slick dots adjustments (optional) */
 .slick-dots {
   bottom: 20px;
+}
+
+.single-item-right {
+  p {
+    color: #000;
+    font-size: 1rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide-item {
+    height: 30vh;
+  }
+  .single-item-left {
+    flex: 0 0 35% !important;
+  }
+  .slide-text {
+    width: 100%;
+    .text-container {
+      .slide-number-section {
+        width: 98%;
+        .slide-title {
+          display: none;
+        }
+      }
+      .slide-description {
+        h2 {
+          /* margin-top:3rem; */
+          font-size: 1.5rem;
+          color: #fff;
+        }
+        p {
+          font-size: 14px;
+          /* display: none; */
+        }
+      }
+    }
+  }
+
+  .banner-section .highlights-box {
+    width: 100%;
+    left: 2rem;
+    .single-item {
+      /* padding:32px 6px 10px 5px;  */
+      height: 50px;
+      .count-text {
+        font-size: 1.5rem;
+        top: 0.3rem;
+        left: 0.5rem;
+      }
+      h3 {
+        font-size: 0.9rem;
+        line-height: 1rem;
+        top: 0.5rem;
+        left: -1.3rem;
+      }
+      .single-item-right {
+        flex: 0 0 65%;
+        flex-grow: 1;
+        p {
+          line-height: 1rem;
+          font-size: 14px;
+          color: #000;
+          margin-top: 1.8rem !important;
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: 3rem;
+    /* text-align: left; */
+  }
 }
