@@ -23,7 +23,7 @@ const Header = () => {
                       <a href="index-2.html">
                         <img
                           className="logo-img"
-                          src={`${process.env.PUBLIC_URL}/assets/images/om-vinayak.gif`}
+                          src={`/assets/images/om-vinayak.gif`}
                           alt="OMVINAYAK-LOGO"
                         />
                       </a>
@@ -75,7 +75,7 @@ const Header = () => {
                       <a href="index-2.html">
                         <img
                           className="logo-img"
-                          src={`${process.env.PUBLIC_URL}/assets/images/om-vinayak.gif`}
+                          src={`/assets/images/om-vinayak.gif`}
                           alt="OMVINAYAK-LOGO"
                         />
                       </a>
