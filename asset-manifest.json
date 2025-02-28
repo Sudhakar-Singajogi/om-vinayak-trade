@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/om-vinayak-trade/static/css/main.c7218a0c.css",
-    "main.js": "/om-vinayak-trade/static/js/main.009b0660.js",
+    "main.css": "/om-vinayak-trade/static/css/main.dee7904f.css",
+    "main.js": "/om-vinayak-trade/static/js/main.d376be83.js",
     "static/media/shape-3.png": "/om-vinayak-trade/static/media/shape-3.1e5943d11fc65210aa40.png",
     "static/media/chooseus-bg.jpg": "/om-vinayak-trade/static/media/chooseus-bg.8ddcdaff560926acf21d.jpg",
     "static/media/banner-4.jpg": "/om-vinayak-trade/static/media/banner-4.402862cf65ecca1e6665.jpg",
@@ -28,11 +28,11 @@
     "static/media/fa-solid-900.html": "/om-vinayak-trade/static/media/fa-solid-900.ea114b114582ca2270ca.html",
     "static/media/fa-v4compatibility.html": "/om-vinayak-trade/static/media/fa-v4compatibility.ea114b114582ca2270ca.html",
     "index.html": "/om-vinayak-trade/index.html",
-    "main.c7218a0c.css.map": "/om-vinayak-trade/static/css/main.c7218a0c.css.map",
-    "main.009b0660.js.map": "/om-vinayak-trade/static/js/main.009b0660.js.map"
+    "main.dee7904f.css.map": "/om-vinayak-trade/static/css/main.dee7904f.css.map",
+    "main.d376be83.js.map": "/om-vinayak-trade/static/js/main.d376be83.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7218a0c.css",
-    "static/js/main.009b0660.js"
+    "static/css/main.dee7904f.css",
+    "static/js/main.d376be83.js"
   ]
 }
