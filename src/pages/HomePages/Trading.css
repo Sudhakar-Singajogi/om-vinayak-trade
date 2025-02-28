@@ -1,12 +1,40 @@
 .sec-pad {
-    padding: 5px 0px 120px 0px !important;
+  padding: 5px 0px 120px 0px !important;
 }
 .pricing-section {
-    .pattern-layer {
-        background-image: url('../../assets/images/shape/shape-3.png');
-    }
+  .pattern-layer {
+    background-image: url("../../assets/images/shape/shape-3.png");
+  }
 }
 
 .sec-title {
-    margin-top: 1rem;;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+   
+}
+
+@media screen and (max-width: 550px) {
+    .sec-pad {
+        padding:5px 0px 50px 0px !important
+    }
+  .trading-section {
+    .auto-container {
+      .sec-title {
+        margin-bottom:26px;
+        .sub-title {
+          font-size: 26px;
+        }
+        h2 {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+    .trading-block-one .inner-box .text {
+        padding:30px 20px 23px 90px;
+    }
 }

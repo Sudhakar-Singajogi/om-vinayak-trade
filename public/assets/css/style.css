@@ -2038,7 +2038,7 @@ div#mCSB_1_container{
   position: absolute;
   left: 0px;
   bottom: 0px;
-  width: 710px;
+  /* width: 710px; */
   background: #f4f4f4;
   border-radius: 5px 5px 0px 5px;
 }

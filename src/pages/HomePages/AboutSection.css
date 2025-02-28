@@ -1,0 +1,55 @@
+@media screen and (max-width: 767px) {
+    .about-section {
+        padding: 40px 0px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-section {
+        padding: 20px 0px !important;
+        /* height: 40vh;  */
+    }
+
+    .about-section .auto-container .row{
+        .image-column figure{
+            height: 30vh;
+            margin-bottom: 15px
+        }
+        .content-column {
+            .content-box {
+                .sec-title {
+                    margin-bottom:1rem;
+                    .sub-title {
+                        font-size: 24px;
+                    }
+                    h2 {
+                        font-size: 1rem;
+                        line-height: 26px;
+                    }                    
+                }
+                .inner-box {
+                    p {
+                        font-size: 14px;
+                    }
+                    .list-item {
+                        margin-top: 15px;
+                        li {
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                .quote-box {
+                    padding:12px 12px 12px 15px;
+                    margin-top:20px;
+                    margin-bottom: 20px;
+                    h4 {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+    } 
+
+}

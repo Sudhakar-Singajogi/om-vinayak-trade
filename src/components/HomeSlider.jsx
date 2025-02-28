@@ -11,7 +11,7 @@ const HomeSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
   };
 
@@ -37,7 +37,7 @@ const HomeSlider = () => {
     },
     {
       slideNumber: "02.",
-      slideNumberDesc:'Some random description goes here and Some random description goes here',
+      slideNumberDesc:'Some random description goes here ',
       title: "Platinum",
       description: () => (
         <>
@@ -91,23 +91,21 @@ const HomeSlider = () => {
                   {/* Slide Number */}
                   <div className="slide-number-section">
                     {/* <h3 className="slide-number">{slide.slideNumber}</h3> */}
-                    <h2 className="slide-title">{slide.title}</h2>
+                    {/* <h2 className="slide-title">{slide.title}</h2> */}
 
                     <div class="highlights-box">
                       <div class="single-item">
                         <div className="single-item-left">
                           <span class="count-text">{slide.slideNumber}</span>
                           <h3> {slide.title}</h3>
+                          <p>{slide.slideNumberDesc}</p>
                         </div>
-                        <div></div>
-                        <div className="single-item-right text"><p>{slide.slideNumberDesc}</p> </div>
+                        
+                        {/* <div className="single-item-right text"><p>{slide.slideNumberDesc}</p> </div> */}
                       </div>
                     </div>
                   </div>
-
-                  {/* Title */}
-
-                  {/* Description */}
+                  
                   <div className="slide-description">{slide.description()}</div>
                 </div>
               </div>
