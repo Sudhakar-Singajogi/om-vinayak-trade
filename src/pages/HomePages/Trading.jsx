@@ -383,11 +383,7 @@ function Trading() {
               </div>
             </div>
           </div>
-          <div className="link-box centred">
-            <a href="index-2.html">
-              <span>See More</span>
-            </a>
-          </div>
+          
         </div>
       </section>
     </>

@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 550px) {
+  .sec-pad {
+    .auto-container {
+      .sec-title {
+        .sub-title {
+          font-size: 26px;
+        }
+        h2 {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .working-section .working-block-one {
+    width:100%
+  }
+}
