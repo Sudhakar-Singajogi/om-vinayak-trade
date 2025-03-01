@@ -47,3 +47,26 @@
         padding:0px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .main-header {
+        .menu-area { 
+           position: fixed !important;
+           justify-content: space-evenly; 
+           background-color: #fff !important;
+           top:0px;
+       }
+       .outer-box {
+        padding: 0px !important;
+       }    
+       .logo-box {
+        figure {
+            top:-10px;
+            .logo-img {
+                width:75% !important
+            }
+        }
+       }    
+    }
+}
+
