@@ -1,0 +1,30 @@
+.not-found {
+    /* border-top: 1px solid #f1f1f1; */
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom:10rem;
+  }
+  
+  .not-found h1 {
+    font-size: 80px;
+    color: red;
+  }
+  
+  .not-found h2 {
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .not-found p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .not-found a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  

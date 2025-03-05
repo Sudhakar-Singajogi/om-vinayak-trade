@@ -13,17 +13,24 @@ import Preloader from "./components/Preloader";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import NotFound from "./components/NotFound";
+import Market from "./pages/Market";
 
 function App() {
   return (
     <Router>
-      {/* <Preloader /> Preloader appears first */}
       <div className="boxed_wrapper">
       <Header />
-      
+      <Preloader /> 
+      <div style={{'borderTop': '1px solid #f1f1f1'}}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/economic-calendar" element={<Market />} />
+          {/* 404 Route - must be placed at the bottom */}
+        <Route path="*" element={<NotFound />} />
         </Routes>
+
+      </div>
         
      
       <Footer />

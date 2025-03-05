@@ -1,32 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Menu.css";
 function Menu() {
   const [subMenuIndex, setSubMenuIndex] = useState(null);
   const menuItems = [
-    {
-      Item: "Home",
-      hasChildren: false,
-    },
-    {
-      Item: "Markets",
-      hasChildren: true,
-      children: ["Markets", "Details"],
-    },
-    {
-      Item: "Trading",
-      hasChildren: true,
-      children: ["Trading", "Details"],
-    },
-    {
-      Item: "Education",
-      hasChildren: true,
-      children: ["Education", "Details"],
-    },
-
-    {
-      Item: "About",
-      hasChildren: false,
-    },
+    { Item: "Home", hasChildren: false, path: "/" },
+    { Item: "Calendar", hasChildren: false, path: "/economic-calendar"},
+    { Item: "Trading", hasChildren: false, path: "/trading" },
+    { Item: "Education", hasChildren: false, path: "/education" },
+    { Item: "About", hasChildren: false, path: "/about" },
   ];
 
   const expandMe = (index) => {
@@ -42,13 +24,16 @@ function Menu() {
       <>
         <ul className={display}>
           {
-            menuItems.map((item) => (<li><a href="markets.html">{item}</a></li>))
+            menuItems.map((child) => (<li key={child.path}>
+              <Link to={child.path}>{child.name}</Link>
+            </li>))
           }
         </ul>
         <div class={`dropdown-btn d-block d-md-none ${display !=='' && ind === subMenuIndex ? 'open' :''} `} onClick={() => expandMe(ind)}>
           <span class="fas fa-angle-down"></span>
         </div>
       </>
+      
     );
   };
 
@@ -58,7 +43,8 @@ function Menu() {
         <ul className="navigation clearfix">
           {menuItems.map((item, ind) => (
             <li key={item.Item} className={`${ind === 0 ? 'current' : ''} ${item.hasChildren ? "dropdown" : "no-sublinks"}`}>
-              <a href="index-2.html">{item.Item}</a>
+              {/* <a href="index-2.html">{item.Item}</a> */}
+              <Link to={item.path} >{item.Item}</Link>
               {item.hasChildren ? ReturnChildrenMenu(item.children, ind) : ''}
             </li>
           ))}

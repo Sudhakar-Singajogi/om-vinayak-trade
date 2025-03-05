@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Preloader from "./Preloader";
 import Menu from "./Menu";
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
   const toggleMenu = () => {
-    console.log('className is:', document.body.className)
-    if (document.body.className === '') {
+    console.log("className is:", document.body.className);
+    if (document.body.className === "") {
       document.body.classList.add("mobile-menu-visible");
     } else {
       document.body.classList.remove("mobile-menu-visible");
@@ -16,18 +16,17 @@ const Header = () => {
 
   return (
     <>
-      {<Preloader />}
+      {/* {<Preloader />} */}
       <header className="main-header">
-        
-
         <div className="header-lower">
           <div className="outer-container">
             <div className="outer-box">
               <div className="menu-area">
-                
+                    
                 <div className="logo-box d-none d-md-block">
                   <div className="logo-title">
-                    <span>OM</span>
+                    {/* <span>OM</span> */}
+                      <p>OM Vinayaka</p>
                     <figure className="logo">
                       <a href="index-2.html">
                         <img
@@ -37,12 +36,13 @@ const Header = () => {
                         />
                       </a>
                     </figure>
-                    <span>Vinayak</span>
+                    {/* <span>Vinayak</span> */}
                   </div>
                 </div>
-                <div className="logo-box">
-                  <div className="logo-title d-block d-md-none">
-                    <span>OM</span>
+                <div className="logo-box d-block d-md-none">
+                  <div className="logo-title ">
+                    {/* <span>OM</span> */}
+                    <p>OM Vinayaka</p>
                     <figure className="logo">
                       <a href="index-2.html">
                         <img
@@ -52,13 +52,14 @@ const Header = () => {
                         />
                       </a>
                     </figure>
-                    <span>Vinayak</span>
+                    {/* <span>Vinayak</span> */}
                   </div>
-
                 </div>
-                  
 
-                <div className="mobile-nav-toggler" onClick={() => toggleMenu()}>
+                <div
+                  className="mobile-nav-toggler"
+                  onClick={() => toggleMenu()}
+                >
                   <i className="icon-bar"></i>
                   <i className="icon-bar"></i>
                   <i className="icon-bar"></i>
@@ -66,8 +67,22 @@ const Header = () => {
                 <nav className="main-menu navbar-expand-md navbar-light">
                   <Menu />
                 </nav>
+                <div className="menu-right-content">
+                  <div className="clients-box">
+                    <div className="icon-box">
+                      <img src="assets/images/icons/icon-6.png" alt="" />
+                    </div>
+                    <a href="index-2.html">
+                      Client Portal<i className="flaticon-right-down"></i>
+                    </a>
+                  </div>
+                  <div className="btn-box">
+                    <a href="index-2.html" className="theme-btn btn-one">
+                      <span>Open an A/c</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -75,11 +90,11 @@ const Header = () => {
         <div className="sticky-header">
           <div className="outer-container">
             <div className="outer-box">
-              
               <div className="menu-area">
-              <div className="logo-box">
+                <div className="logo-box">
                   <div className="logo-title">
-                    <span>OM</span>
+                  <p>OM Vinayaka</p>
+                    {/* <span>OM</span> */}
                     <figure className="logo">
                       <a href="index-2.html">
                         <img
@@ -89,16 +104,30 @@ const Header = () => {
                         />
                       </a>
                     </figure>
-                    <span>Vinayak</span>
+                    {/* <span>Vinayak</span> */}
                   </div>
                 </div>
 
                 <nav className="main-menu clearfix">
                   <Menu />
                 </nav>
+                <div className="menu-right-content">
+                   
+                  <div className="clients-box">
+                    <div className="icon-box">
+                      <img src="assets/images/icons/icon-6.png" alt="" />
+                    </div>
+                    <a href="index-2.html">
+                      Client Portal<i className="flaticon-right-down"></i>
+                    </a>
+                  </div>
+                  <div className="btn-box">
+                    <a href="index-2.html" className="theme-btn btn-one">
+                      <span>Open an A/c</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              
-              
             </div>
           </div>
         </div>
@@ -106,15 +135,15 @@ const Header = () => {
       <div className="mobile-menu">
         <div className="menu-backdrop"></div>
         <div className="close-btn" onClick={() => toggleMenu()}>
-          
           <i className="fas fa-times"></i>
         </div>
 
         <nav className="menu-box">
-        <div class="nav-logo"></div>
-          
-          <div className="menu-outer"><Menu /></div>
-          
+          <div className="nav-logo"></div>
+
+          <div className="menu-outer">
+            <Menu />
+          </div>
         </nav>
       </div>
     </>

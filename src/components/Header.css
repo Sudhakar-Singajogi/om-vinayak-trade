@@ -1,3 +1,26 @@
+.menu-right-content {
+  margin-left: 3rem !important;
+  .btn-box .theme-btn {
+    background: #eb6f45;
+  }
+}
+
+.logo-box p {
+  color: #eb6f45;
+  font-weight: bold;
+  position: static;
+  margin-top: 2.5rem;
+  margin-left: -10px;
+}
+
+.main-header .logo-box {
+  padding: 0px;
+  margin-right: 3rem;
+  figure {
+    top: -20px !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu .nav-logo {
     padding-bottom: 0px;
@@ -17,7 +40,7 @@
   }
   .menu-area .mobile-nav-toggler {
     padding-left: 60px;
-    padding-top:0px;
+    padding-top: 0px;
   }
 
   .main-header .logo-box {
@@ -29,44 +52,63 @@
   }
 
   .logo-box {
-    .logo-title span{
-        /* margin-left:2.8rem; */
-        font-size: 12px;
+    .logo-title span {
+      /* margin-left:2.8rem; */
+      font-size: 12px;
     }
   }
-  .menu-area .mobile-nav-toggler .icon-bar  {
-    height:5px;
+  .menu-area .mobile-nav-toggler .icon-bar {
+    height: 5px;
     margin-bottom: 6px;
-    width:40px
+    width: 40px;
   }
 }
 
-
 @media screen and (max-width: 400px) {
-    .menu-area .mobile-nav-toggler {
-        padding:0px;
-    }
+  .menu-area .mobile-nav-toggler {
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .main-header {
-        .menu-area { 
-           position: fixed !important;
-           justify-content: space-evenly; 
-           background-color: #fff !important;
-           top:0px;
-       }
-       .outer-box {
-        padding: 0px !important;
-       }    
-       .logo-box {
-        figure {
-            top:-10px;
-            .logo-img {
-                width:75% !important
-            }
-        }
-       }    
+  .main-header {
+    .menu-area {
+      position: fixed !important;
+      justify-content: space-evenly;
+      background-color: #fff !important;
+      top: 0px;
     }
-}
+    .outer-box {
+      padding: 0px !important;
+    }
+    .logo-box {
+      figure {
+        top: -10px;
+        .logo-img {
+          width: 75% !important;
+        }
+      }
+    }
+  }
 
+  .main-header .logo-box {
+    padding: 0px;
+    margin-right: 0rem;
+    figure {
+      top: -15px !important;
+      width: 160px;
+      /* left: -23px; */
+    }
+  }
+  .logo-box p {
+    color: #eb6f45;
+    font-weight: bold;
+    position: static;
+    margin-top: 3.7rem;
+    margin-left: 12px;
+    font-size: 14px;
+  }
+  .menu-area .mobile-nav-toggler {
+    padding-left: 43%;
+  }
+}
